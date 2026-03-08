@@ -10,9 +10,12 @@ public class R02_XP00_J {
     public static void main(String[] args) throws IOException {
         File tempFile = File.createTempFile("labfile", ".txt");
 
-        // Noncompliant: ignoring the return value
-        tempFile.delete();
+        boolean deleted = tempFile.delete();
 
-        System.out.println("Tried to delete file.");
+        if (deleted) {
+            System.out.println("File deleted successfully.");
+        } else {
+            System.out.println("File could not be deleted.");
+        }
     }
 }
