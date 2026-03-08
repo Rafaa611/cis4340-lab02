@@ -13,8 +13,7 @@ public class R10_THI00_J {
             }
         });
 
-        // Noncompliant: does not start a new thread
-        thread.run();
+        thread.start();
 
     }
 }
