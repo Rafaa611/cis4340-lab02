@@ -8,9 +8,12 @@ public class R04_STR03_J {
 
         byte[] rawData = {65, 66, 67, 0, 127, -1};
 
-        // Noncompliant: treating raw noncharacter data as text
-        String data = new String(rawData);
+        System.out.print("Raw byte data: ");
 
-        System.out.println("Encoded data as String: " + data);
+        for (byte b : rawData) {
+            System.out.print(b + " ");
+        }
+
+        System.out.println();
     }
 }
