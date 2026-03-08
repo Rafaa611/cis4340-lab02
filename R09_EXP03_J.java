@@ -9,8 +9,7 @@ public class R09_EXP03_J {
         Integer a = 128;
         Integer b = 128;
 
-        // Noncompliant: compares object references, not values
-        if (a == b) {
+        if (a.equals(b)) {
             System.out.println("Equal");
         } else {
             System.out.println("Not equal");
