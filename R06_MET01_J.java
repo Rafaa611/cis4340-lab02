@@ -6,8 +6,9 @@ public class R06_MET01_J {
 
     public static int divide(int a, int b) {
 
-        // Noncompliant: using assert to validate argument
-        assert b != 0 : "Denominator must not be zero";
+        if (b == 0) {
+            throw new IllegalArgumentException("Denominator must not be zero");
+        }
 
         return a / b;
     }
