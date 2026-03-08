@@ -14,7 +14,7 @@ public class R07_ERR00_J {
             System.out.println(reader.readLine());
             reader.close();
         } catch (IOException e) {
-            // Noncompliant: exception is ignored
+            System.out.println("Error reading file: " + e.getMessage());
         }
     }
 }
