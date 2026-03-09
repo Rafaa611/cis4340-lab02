@@ -1,1 +1,17 @@
 # cis4340-lab02
+
+Rafael Matos
+CIS4340
+Lab 02
+
+#Implemented Rules
+-IDS03-J
+-XP00-J
+-NUM03-J
+-STR03-J
+-MET01-J
+-ERR00-J
+-NUM02-J
+-EXP03-J
+-THI00-J
+-MET09-J
