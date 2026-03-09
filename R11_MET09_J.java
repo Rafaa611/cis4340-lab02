@@ -22,6 +22,11 @@ public class R11_MET09_J {
             Person other = (Person) obj;
             return name.equals(other.name);
         }
+
+        @Override
+        public int hashCode() {
+            return name.hashCode();
+        }
     }
 
     public static void main(String[] args) {
